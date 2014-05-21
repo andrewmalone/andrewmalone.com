@@ -26,12 +26,28 @@ module.exports = function(grunt) {
                 '_includes/**',
                 'css/**'
             ],
-            tasks: ['shell:jekyllBuild'],
+            tasks: ['sass', 'autoprefixer', 'shell:jekyllBuild'],
             options: {
               livereload: true
             },
           },
-        }
+        },
+        sass: {
+		    dist: {
+		      files: {
+		        'css/main.css': 'css/main.scss'
+		      }
+		    }
+		},
+		autoprefixer: {
+			options: {
+				browsers: ['last 2 version']
+			},
+			single_file: {
+				src: 'css/main.css',
+				dest: 'css/main_prefixed.css'
+			}
+		}
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -40,8 +56,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'connect', 'watch']);
 
 };
