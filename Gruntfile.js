@@ -32,6 +32,7 @@ module.exports = function(grunt) {
             },
           },
         },
+        // need to minify!
         sass: {
 		    dist: {
 		      files: {

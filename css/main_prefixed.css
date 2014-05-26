@@ -57,6 +57,7 @@ header[role="banner"] h1 {
   line-height: 1em;
   text-align: center;
   padding: .5em 0 .3em 0;
+  background: -webkit-linear-gradient(#cba031 0.2em, #d3ddf4 0.35em);
   background: linear-gradient(#cba031 0.2em, #d3ddf4 0.35em); }
   @media all and (min-width: 20em) {
     header[role="banner"] h1 {
@@ -140,6 +141,7 @@ footer {
     color: #000c33;
     display: inline-block;
     padding: .2em .5em .3em .5em;
+    -webkit-transition: background .3s;
     transition: background .3s;
     border-radius: .5em; }
   footer a:hover {
