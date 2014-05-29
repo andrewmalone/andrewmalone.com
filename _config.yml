@@ -11,6 +11,15 @@ permalink: /:year/:month/:day/:title/
 exclude: [
     'node_modules',
     'package.json',
-    'Gruntfile.js'
+    'Gruntfile.js',
+    'audio/*.wav',
+    'audio/*.aiff'
 ] 
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: post

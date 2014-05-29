@@ -10,9 +10,9 @@ layout: default
 	<div class="content">
 	{{ content }}
 	</div>
-	
+		
 	<div class="pagination">
-	{% if page.previous %}<p>Older: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>{% endif %}
-	{% if page.next %}<p>Newer: <a href="{{ page.next.url }}">{{ page.next.title }}</a></p>{% endif %}
+	{% if page.previous %}<p>Previous: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>{% endif %}
+	{% if page.next %}<p>Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a></p>{% endif %}
 	</div>
 </article>

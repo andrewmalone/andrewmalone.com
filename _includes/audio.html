@@ -1,6 +1,13 @@
-{% if include.audio.title %}<h3>{{ include.audio.title }}</h3>{% endif %}
-<audio controls {% if include.audio.loop == true %}loop{% else %}x{% endif %}>
-<source src="/audio/{{ page.date | date: "%Y-%m-%d" }}/{{ include.audio.file }}.mp3">
-<a href="/audio/{{ page.date | date: "%Y-%m-%d" }}/{{ include.audio.file }}.mp3">Audio file</a>
+{% if include.audio == nil %}
+	{% assign audio = page.audio %}
+{% else %}
+	{% assign audio = include.audio %}
+{% endif %}
+{% if audio.title %}
+<h3>{{ audio.title }}</h3>
+{% endif %}
+<audio controls {% if audio.loop == true %}loop{% endif %}>
+<source src="/audio/{{ page.date | date: "%Y-%m-%d" }}/{{ audio.file }}.mp3">
+<a href="/audio/{{ page.date | date: "%Y-%m-%d" }}/{{ audio.file }}.mp3">Audio file</a>
 </audio>
 
