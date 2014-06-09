@@ -1,9 +1,9 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: andrewmalone.com
+email: andrew@andrewmalone.com
 description: ""
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://andrewmalone.com"
 
 # Build settings
 markdown: kramdown
