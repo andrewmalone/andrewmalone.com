@@ -194,4 +194,10 @@ footer {
 	a:hover {
 		background:lighten($base,15%);
 	}
+	.rss {
+		padding-left:0;
+	}
+	.rss:hover {
+		background:none;
+	}
 }
