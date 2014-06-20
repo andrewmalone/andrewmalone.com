@@ -5,7 +5,10 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 		shell: {
             jekyllBuild: {
-                command: 'jekyll build'
+                command: 'jekyll build --drafts'
+            },
+            jekyllPublish: {
+	            command: 'jekyll build'
             }
         },
 		connect: {
@@ -23,6 +26,7 @@ module.exports = function(grunt) {
                 'index.html',
                 '_layouts/**',
                 '_posts/**',
+                '_drafts/**',
                 '_includes/**',
                 'css/**'
             ],
@@ -64,6 +68,7 @@ module.exports = function(grunt) {
     
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'shell:jekyllBuild', 'connect', 'watch']);
+	grunt.registerTask('publish', ['sass', 'autoprefixer', 'shell:jekyllPublish']);
 
 };
