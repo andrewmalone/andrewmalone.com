@@ -1,0 +1,20 @@
+---
+title: Double piano groove
+audio:
+  file: pianos
+---
+One thing I've been doing lately is practicing more with a metronome, and trying to hold a solid groove. Here's the basic idea:
+
+* Turn on a metronome or simple drum beat.
+* Record along to the beat.
+* Play back the recording, listening for whether the timing sounds good or not.
+
+It's amazing how many imperfections you hear once you record something - a take that felt great while playing can sound jumpy and uneven when played back without the metronome.
+
+This groove came out of one of those metronome practice session - it started with the electric piano part heard at the beginning ([iLectric piano][iLectric] recorded into [Cubasis]), played along to the drum beat ([MoDrum], processed a little bit through [Turnado]). Then I had the idea to add a layer of acoustic piano on top ([iGrand piano][iGrand]).
+
+The overall groove isn't perfect, but I'm mostly happy with it.
+
+
+{% include audio.html %}
+{% include links.markdown %}
