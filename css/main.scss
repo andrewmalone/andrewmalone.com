@@ -132,6 +132,12 @@ article .content {
 	@include breakpoint($bp-large) {
 		font-size:120%;
 	}
+	ul {
+	margin:0 0 1em 1em;
+	}
+	li {
+		list-style:disc;
+	}
 }
 
 .pagination {
@@ -145,12 +151,7 @@ article .content {
 p,audio {
 	margin:0 0 1em 0;
 }
-ul {
-	margin:0 0 1em 1em;
-}
-li {
-	list-style:disc;
-}
+
 h3 {
 	margin-bottom: .5em;
 }
