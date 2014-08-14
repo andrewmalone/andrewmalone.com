@@ -10,3 +10,5 @@
 [iLectric]: https://itunes.apple.com/us/app/ilectric-piano-for-ipad/id592094556
 [iGrand]: https://itunes.apple.com/us/app/igrand-piano-for-ipad/id562917936
 [MoDrum]: https://itunes.apple.com/us/app/modrum-rhythm-composer/id408872480
+[ToneStack]: https://itunes.apple.com/us/app/tonestack/id870269510
+[DM1]: https://itunes.apple.com/us/app/dm1-the-drum-machine/id431573951
