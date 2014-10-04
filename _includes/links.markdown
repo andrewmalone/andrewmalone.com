@@ -12,3 +12,7 @@
 [MoDrum]: https://itunes.apple.com/us/app/modrum-rhythm-composer/id408872480
 [ToneStack]: https://itunes.apple.com/us/app/tonestack/id870269510
 [DM1]: https://itunes.apple.com/us/app/dm1-the-drum-machine/id431573951
+[SampleTank]: https://itunes.apple.com/us/app/sampletank/id464783893
+[SquashIt]: https://itunes.apple.com/us/app/squashit/id796836524
+[Galileo]: https://itunes.apple.com/us/app/galileo-organ/id644077827
+[AUFX:Space]: https://itunes.apple.com/us/app/aufx-space/id665650685
