@@ -14,6 +14,14 @@ $bp-large: 40em;
 $text-color: #000C33;
 $base: #315CCB;
 
+em {
+	font-style: italic;
+}
+
+h2 {
+	font-weight: bold;	
+}
+
 ul.posts li {
 	display: flex;	
 	align-items: baseline;
@@ -133,10 +141,11 @@ article .content {
 		font-size:120%;
 	}
 	ul {
-	margin:0 0 1em 1em;
+		margin:0 0 1em 1em;
 	}
 	li {
 		list-style:disc;
+		margin-top: .2em;
 	}
 }
 
