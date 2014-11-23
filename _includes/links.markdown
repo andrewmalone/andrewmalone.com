@@ -18,3 +18,4 @@
 [AUFX:Space]: https://itunes.apple.com/us/app/aufx-space/id665650685
 [AUFX:Dub]: https://itunes.apple.com/us/app/aufx-dub/id678982701
 [Impaktor]: https://itunes.apple.com/us/app/impaktor-drum-synthesizer/id557824278
+[Auria]: https://itunes.apple.com/us/app/auria/id524122834
