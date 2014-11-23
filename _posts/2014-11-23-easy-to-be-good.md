@@ -13,7 +13,7 @@ For these new songs, Kate has been coming to me with strong melody ideas, which 
 
 When working out arrangements, there's sometimes a lot of ideas kicking around in my head, and I go through a process where I'm adding layer after layer. This song started on piano, then I thought "oh, it has to have a bass part", then "oh, I need a quiet synth", then "maybe a guitar strum part", then "maybe a higher strumming part". And I add, add, add. But there's usually a point where I suddenly notice that things are starting to sound worse and I need to start stripping things away again. Sometimes I even end up back where I started — but I always need to go through that process.
 
-In this case the acoustic guitar part was the key to the feel of the song. Once I had that everything else clicked into place and recording the parts was relatively easy. This is the first song where the feel came out close to exactly what was in my head.
+In this case the acoustic guitar part was the key to the feel of the song. I've been so obsessed with ukulele over the past year that I haven't even touched the guitar in months, but it was exactly the right thing here. Once I had that everything else clicked into place and recording the parts was relatively easy. This is the first song where the feel came out close to exactly what was in my head.
 
 ## Recording notes
 
