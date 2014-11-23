@@ -58,6 +58,16 @@ a:hover {
 	color: darken($base, 15%);
 }
 
+figure {
+	border: 1px dotted lighten($base, 20%);
+	display: inline-block;
+	padding: .5em;
+	margin-bottom: 1em;
+}
+
+figcaption {
+	font-size: 75%;
+}
 
 header[role="banner"] {
 	//position: relative;
