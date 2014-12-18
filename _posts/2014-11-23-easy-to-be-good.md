@@ -1,9 +1,9 @@
 ---
 layout: post
 audio:
-  file: easy to be good
+  file: Easy To Be Good
 ---
-This is the third collaborative song with Kate, and it is my favorite so far. Previous songs are [here][song1] and [here][song2], and I'll link to Kate's blog post about this one as soon as she posts it.
+This is the third collaborative song with Kate, and it is my favorite so far. Previous songs are [here][song1] and [here][song2]. Here is [Kate's post about making this song](http://kateleary.net/new-song-easy-to-be-good/).
 
 {% include audio.html %}
 
