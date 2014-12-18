@@ -19,3 +19,5 @@
 [AUFX:Dub]: https://itunes.apple.com/us/app/aufx-dub/id678982701
 [Impaktor]: https://itunes.apple.com/us/app/impaktor-drum-synthesizer/id557824278
 [Auria]: https://itunes.apple.com/us/app/auria/id524122834
+[DrumJam]: https://itunes.apple.com/us/app/drumjam/id530162824
+[KORG Module]: https://itunes.apple.com/us/app/korg-module/id932191687
