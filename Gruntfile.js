@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     	pkg: grunt.file.readJSON('package.json')
 	}
 	
-	grunt.util._.extend(config, loadConfig('./tasks/options/'));
+	grunt.util._.extend(config, loadConfig('./_grunt/options/'));
 	grunt.initConfig(config);
 
     require('load-grunt-tasks')(grunt);
