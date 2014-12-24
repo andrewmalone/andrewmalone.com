@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<style scoped>
+	.button {
+		border: 2px solid black;
+		border-radius: 10%;
+		width: 1.5em;
+		height: 1.5em;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	button:focus {
+		outline:none;
+	}
+	.button button {
+		text-indent:-9999px;
+		display:block;
+		width: 100%;
+		height: 100%;
+		padding: .25em;
+		border: 0;
+		background: center center/70% transparent no-repeat;
+		cursor: pointer;
+	}
+	#play {
+		background-image: url("media-play.svg");
+	}
+	#play.active {
+		background-image: url("media-pause.svg");
+	}
+	#previous {
+		background-image: url("media-step-backward.svg");
+	}
+	#next {
+		background-image: url("media-step-forward.svg");
+	}
+	#controls {
+		border: 1px solid black;
+		padding: .5em;
+		margin-bottom: .5em;
+	}
+	#timer {
+		display:inline-block;
+		vertical-align: middle;
+	}
+	article .content ul.songs {
+		margin: -.5em 0 1em 0;
+	}
+	ul.songs li {
+		list-style:none;
+		border-bottom: 1px dashed #ccc;
+		font-size: .8em;
+		padding: .1em .3em;
+		margin: 0;
+	}
+	.songs a {
+		display: inline-block;
+		width:80%;
+	}
+	.songs .time {
+		display: inline-block;
+		width: 20%;
+		text-align: right;
+	}
+	ul.songs li.active {
+		background: #ddd;
+	}
+	#currentsong {
+		font-size: .8em;
+		margin-top: .5em;
+	}
+	#currentsong .label {
+		color: #999;
+	}
+	p {
+		font-size: .9em;
+	}
+</style>
+<article>
+	<header><h1>Homemade Christmas Music</h1></header>
+	<div class="content">
+	<p>Years ago, I created some silly versions of Christmas songs with various family and friends.</p>
+	
+	<audio id="player"></audio>
+	
+	<div id="controls">
+		<div class="button"><button id="previous">Previous</button></div>
+		<div class="button"><button id="play">Play</button></div>
+		<div class="button"><button id="next">Next</button></div>
+		<div id="timer"><span id="minutes">0</span>:<span id="seconds">00</span></div>
+		<div id="currentsong"><span class="label">Now playing: </span><span id="nowplaying"></span></div>
+	</div>
+	
+	<h2>Christmas At Home</h2>
+	<p>The original album, from 1999. This was created by me and my sister Beth during a time when we were both bored at home in the week leading up to Christmas. <br/><a href="{{'songs/Christmas At Home.zip'|replace:' ','%20'}}">Download zip file</a></p>
+	<ul class="songs">
+	{% for song in site.data.christmas.album1.songs %}
+		<li><a href="songs/{{song.file | replace:' ','%20'}}.mp3">{{song.name}}</a><span class="time">{{song.length}}</span>{% endfor %}
+	</ul>
+	
+	<h2>Home Again For The Holidays</h2>
+	<p>The followup album, from 2003. Beth and I branched out a little bit with slightly higher production values and help from a few friends. <br/><a href="{{'songs/Home Again For The Holidays.zip'|replace:' ','%20'}}">Download zip file</a></p>
+	<ul class="songs">
+	{% for song in site.data.christmas.album2.songs %}
+		<li><a href="songs/{{song.file | replace:' ','%20'}}.mp3">{{song.name}}</a><span class="time">{{song.length}}</span>{% endfor %}
+	</ul>
+	
+	<h2>Bonus!</h2>
+	<p>An extra song created by my brother Jonathan and me in the winter of 2004.</p>
+	<ul class="songs">
+		<li><a href="songs/christmas%20tree.mp3">Christmas Tree</a><span class="time">1:55</span>
+	</ul>
+	</div>
+</article>
+<script src="christmas.js"></script>

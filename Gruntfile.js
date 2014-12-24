@@ -29,9 +29,11 @@ module.exports = function(grunt) {
                 '_posts/**',
                 '_drafts/**',
                 '_includes/**',
-                'css/**'
+                'css/**',
+                'christmas/**',
+                '_data/**'
             ],
-            tasks: ['sass', 'autoprefixer', 'shell:jekyllBuild'],
+            tasks: ['sass', 'autoprefixer', 'jshint', 'shell:jekyllBuild'],
             options: {
               livereload: true
             },
@@ -55,6 +57,9 @@ module.exports = function(grunt) {
 				src: 'css/main.css',
 				dest: 'css/main_prefixed.css'
 			}
+		},
+		jshint: {
+			beforeconcat: ['christmas/*.js']
 		}
     });
 
@@ -66,10 +71,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'shell:jekyllBuild', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'jshint', 'shell:jekyllBuild', 'connect', 'watch']);
 	grunt.registerTask('publish', ['sass', 'autoprefixer', 'shell:jekyllPublish']);
 
 };

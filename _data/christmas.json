@@ -1,0 +1,157 @@
+{
+	album1: {
+		title: "Christmas at Home",
+		songs: [
+			{
+				name: "Winter Wonderland",
+				file: "01 Winter Wonderland",
+				length: "1:17"
+			},
+			{
+				name: "Rudolph the Red-Nosed Reindeer",
+				file: "02 Rudolph The Red-Nosed Reindeer",
+				length: "1:32"
+			},
+			{
+				name: "Little Drummer Boy",
+				file: "03 Little Drummer Boy",
+				length: "1:31"
+			},
+			{
+				name: "All I Want For Christmas",
+				file: "04 All I Want For Christmas",
+				length: "1:55"
+			},
+			{
+				name: "Hark! The Herald Angels Sing",
+				file: "05 Hark! The Herald Angels Sing",
+				length: "2:02"
+			},
+			{
+				name: "Holly Jolly Christmas",
+				file: "06 Holly Jolly Christmas",
+				length: "1:26"
+			},
+			{
+				name: "Jolly Old St. Nicholas",
+				file: "07 Jolly Old St. Nicholas",
+				length: "0:17"
+			},
+			{
+				name: "Sleigh Ride",
+				file: "08 Sleigh Ride",
+				length: "2:56"
+			},
+			{
+				name: "Feliz Navidad",
+				file: "09 Feliz Navidad",
+				length: "1:43"
+			},
+			{
+				name: "Jingle Bells",
+				file: "10 Jingle Bells",
+				length: "1:55"
+			},
+			{
+				name: "Silent Night",
+				file: "11 Silent Night",
+				length: "1:23"
+			},
+			{
+				name: "Rockin' Around The Christmas Tree",
+				file: "12 Rockin' Around The Christmas Tree",
+				length: "1:35"
+			},
+			{
+				name: "The Days of Christmas",
+				file: "13 The Days of Christmas",
+				length: "0:58"
+			},
+			{
+				name: "We Wish You a Merry Christmas",
+				file: "14 We Wish You A Merry Christmas",
+				length: "0:25"
+			}
+		]
+	},
+	album2: {
+		title: "Home Again For The Holidays",
+		songs: [
+			{
+				name: "Angels We Have Heard On High (part 1)",
+				file: "01 Angel We Have Heard On High (pt 1)",
+				length: "0:31"	
+			},
+			{
+				name: "Angels We Have Heard On High (part 2)",
+				file: "02 Angels We Have Heard On High (pt 2)",
+				length: "2:22"
+			},
+			{
+				name: "I'll Be Home For Christmas",
+				file: "03 I'll Be Home For Christmas",
+				length: "1:43"
+			},
+			{
+				name: "It Came Upon a Midnight Clear",
+				file: "04 It Came Upon A Midnight Clear",
+				length: "2:43"
+			},
+			{
+				name: "Hallelujah Chorus (part 1)",
+				file: "05 Hallelujah Chorus (pt 1)",
+				length: "0:48"
+			},
+			{
+				name: "O Come, All Ye Faithful",
+				file: "06 O Come, All Ye Faithful",
+				length: "1:48"
+			},
+			{
+				name: "Silver Bells",
+				file: "07 Silver Bells",
+				length: "1:21"
+			},
+			{
+				name: "The First Noel",
+				file: "08 The First Noel",
+				length: "2:02"
+			},
+			{
+				name: "Hallelujah Chorus (part 2)",
+				file: "09 Hallelujah Chorus (pt 2)",
+				length: "0:42"
+			},
+			{
+				name: "Deck The Halls",
+				file: "10 Deck The Halls",
+				length: "2:13"
+			},
+			{
+				name: "Joy To The World",
+				file: "11 Joy To The World",
+				length: "3:20"
+			},
+			{
+				name: "Hallelujah Chorus (part 3)",
+				file: "12 Hallelujah Chorus (pt 3)",
+				length: "0:44"
+			},
+			{
+				name: "Have Yourself A Merry Little Christmas",
+				file: "13 Have Yourself A Merry Little Christmas",
+				length: "2:02"
+			},
+			{
+				name: "Away In A Manger",
+				file: "14 Away In A Manger",
+				length: "3:03"
+			},
+			{
+				name: "Let It Snow",
+				file: "15 Let It Snow",
+				length: "3:31"
+			}
+		]
+	}
+}
