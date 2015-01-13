@@ -17,6 +17,8 @@ exclude: [
     'audio/*.aiff'
 ] 
 
+mode: prod
+
 defaults:
   -
     scope:
