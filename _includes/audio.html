@@ -4,7 +4,7 @@
 	{% assign audio = include.audio %}
 {% endif %}
 {% if audio.title %}
-<h3>{{ audio.title }}</h3>
+<h3 class="audiotitle">{{ audio.title }}</h3>
 {% endif %}
 <audio controls preload="none" {% if audio.loop == true %}loop{% endif %}>
 <source src="/audio/{{ page.date | date: "%Y-%m-%d" }}/{{ audio.file }}.mp3">
