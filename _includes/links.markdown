@@ -21,3 +21,6 @@
 [Auria]: https://itunes.apple.com/us/app/auria/id524122834
 [DrumJam]: https://itunes.apple.com/us/app/drumjam/id530162824
 [KORG Module]: https://itunes.apple.com/us/app/korg-module/id932191687
+[SeekBeats]: https://itunes.apple.com/us/app/seekbeats/id681672176
+[Egoist]: https://itunes.apple.com/us/app/egoist/id859084874
+[iFretless Bass]: https://itunes.apple.com/us/app/ifretless-bass/id512929963
