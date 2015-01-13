@@ -16,3 +16,22 @@ layout: default
 	{% if page.next %}<p>Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a></p>{% endif %}
 	</div>
 </article>
+
+<script>
+var audios = document.getElementsByTagName("audio");
+for (var i = 0, len = audios.length; i < len; i++)
+{
+	audios[i].addEventListener("play", playStarted);
+}
+function playStarted(e)
+{
+	var audios = document.getElementsByTagName("audio");
+	for (var i = 0, len = audios.length; i < len; i++)
+	{
+		if (audios[i] !== e.target && !audios[i].paused)
+		{
+			audios[i].pause();
+		}
+	}
+}	
+</script>
