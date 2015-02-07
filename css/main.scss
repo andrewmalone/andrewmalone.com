@@ -44,7 +44,7 @@ ul.posts li {
 
 
 body {
-	font:110%/1.4 pt-sans, sans-serif;
+	font:110%/1.5 pt-sans, sans-serif;
 	background:#ececec;
 	color: $text-color;
 }
@@ -145,10 +145,10 @@ article .content {
 		font-size:80%;
 	}
 	@include breakpoint($bp-medium) {
-		font-size:110%;
+		font-size:100%;
 	}
 	@include breakpoint($bp-large) {
-		font-size:120%;
+		font-size:110%;
 	}
 	ul {
 		margin:0 0 1em 1em;
@@ -156,6 +156,9 @@ article .content {
 	li {
 		list-style:disc;
 		margin-top: .2em;
+	}
+	strong {
+		font-weight: bold;
 	}
 }
 
