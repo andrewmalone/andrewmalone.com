@@ -26,3 +26,9 @@ defaults:
       type: "posts"
     values:
       layout: post
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: post
