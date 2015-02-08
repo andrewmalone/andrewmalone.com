@@ -4,6 +4,9 @@ module.exports = {
     },
     jekyllPublish: {
         command: 'jekyll build'
+    },
+    publish: {
+	    command: 'rsync -avz --delete -e "ssh -p 2222" ~/Repositories/andrewmalone.com/_site/ amalone@kateleary.net:~/public_html/andrewmalone.com/'
     }
 
 }
