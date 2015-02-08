@@ -12,6 +12,10 @@ audio3:
 audio4:
   file: Modrum4
   title: Loop 4
+tags:
+  audio
+  loop
+  drum
 ---
 One thing I love about making music on iOS is the portability. My commute isn't especially long, but sometimes I try to do some brief creative task while on the subway. Often, I make simple drum beats using [MoDrum], a nice little drum synthesis/pattern app.
 

@@ -2,6 +2,10 @@
 layout: post
 audio:
   file: Easy To Be Good
+tags:
+  audio
+  song
+  riversbend
 ---
 This is the third collaborative song with Kate, and it is my favorite so far. Previous songs are [here][song1] and [here][song2]. Here is [Kate's post about making this song](http://kateleary.net/new-song-easy-to-be-good/).
 

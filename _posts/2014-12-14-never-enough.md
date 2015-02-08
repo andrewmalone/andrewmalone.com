@@ -1,6 +1,10 @@
 ---
 audio:
   file: Never Enough
+tags:
+  audio
+  song
+  riversbend
 ---
 
 {% include audio.html %}

@@ -7,8 +7,9 @@ audio2:
 audio3:
   file: Full
 tags:
-- app:garageband
-- ukulele
+  audio
+  loop
+  ukulele
 ---
 This is a loop I made a few weeks ago in [GarageBand] on the iPad.
 

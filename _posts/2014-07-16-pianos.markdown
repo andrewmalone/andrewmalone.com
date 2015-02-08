@@ -2,6 +2,10 @@
 title: Double piano groove
 audio:
   file: pianos
+tags:
+  audio
+  piano
+  sketch
 ---
 One thing I've been doing lately is practicing more with a metronome, and trying to hold a solid groove. Here's the basic idea:
 

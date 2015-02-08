@@ -15,6 +15,10 @@ audio4:
 audio5:
   file: Mix
   title: Final mix
+tags:
+  audio
+  ukulele
+  sketch
 ---
 
 One of my absolute favorite apps on the iPad is [JamUp]. The amp modeling and effects are top notch, and the variety of possible sound is endless. Today I wanted to create something using only layers of ukulele. Everything here was played through JamUp and recorded into [Cubasis]. There's a few timing issues, but overall I'm quite happy with the result.

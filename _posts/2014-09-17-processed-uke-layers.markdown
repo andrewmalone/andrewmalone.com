@@ -3,6 +3,10 @@ audio1:
   file: higgins
 audio2:
   file: higgins-unprocessed 
+tags:
+  audio
+  ukulele
+  sketch
 ---
 
 Here's something I worked up about a month ago while on vacation in [Higgins Beach, Maine](https://www.google.com/maps/place/Higgins+Beach,+ME+04074/).

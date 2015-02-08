@@ -18,6 +18,9 @@ audio5:
 audio6:
   file: loud-beat
   title: Basic resequenced beat
+tags:
+  audio
+  sketch
 ---
 One thing I like playing with when working with sound is slicing and reordering samples — so I tend to be drawn to apps that allow this in some way. This track started when I was visiting family and the kids were playing with an old [Fisher Price radio music box][radio], which I sampled directly into the iPad microphone.
 

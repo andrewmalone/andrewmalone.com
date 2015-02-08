@@ -7,12 +7,8 @@ audio2:
 audio3:
   file: Mix
 tags:
-- app:cubasis
-- app:addictive_synth
-- app:funkbox
-- app:ifretless
-- app:turnado
-- app:final_touch
+  audio
+  sketch
 ---
 
 One of the things I'm trying to do these days is to spend some time exploring new apps. I fall into the common trap of acquiring apps and then not really using them very much. This has been especially true for synths - I like the idea of using lots of different synths, but in practice don't spend enough time tweaking and playing and really getting to know the apps.

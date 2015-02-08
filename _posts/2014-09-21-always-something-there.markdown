@@ -2,6 +2,11 @@
 title: Always Something There To Remind Me (cover)
 audio:
   file: always-something-there
+tags:
+  audio
+  song
+  cover
+  ukulele
 ---
 I've always been a fan of song covers that significantly shift the musical context of the song. Off the top of my head, here's just a few examples I can think of:
 

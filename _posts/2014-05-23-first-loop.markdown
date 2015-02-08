@@ -6,13 +6,10 @@ audio1:
 audio2:
   loop: true,
   file: DrumPerfect-fx
-categories: audio
 tags:
-- audio
-- drum
-- iPad loop
-- app:drumperfect
-- app:sequential
+  audio
+  loop
+  sketch
 ---
 I recently bought [DrumPerfect][drumperfect] for the iPad, and was trying it out this morning. I came up with this loop:
 

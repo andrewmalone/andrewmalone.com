@@ -5,10 +5,9 @@ audio: {
 	file: uke-pattern
 }
 tags:
-- audio
-- ukulele
-- app:jamup
-- app:garageband
+  audio
+  ukulele
+  sketch
 ---
 This is a pattern I came up with a few weeks ago that I can't seem to get out of my head. I'm not sure what I'm going to do with it exactly, but I wanted to get it recorded anyway.
 

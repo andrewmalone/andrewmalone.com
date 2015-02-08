@@ -1,6 +1,9 @@
 ---
 audio:
   file: acoustijam
+tags:
+  audio
+  sketch
 ---
 I took the morning off from work today since both kids are in summer camp, which means I was able to spend several hours making some music. This is what I ended up with:
 
