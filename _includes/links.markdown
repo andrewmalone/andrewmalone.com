@@ -24,3 +24,5 @@
 [SeekBeats]: https://itunes.apple.com/us/app/seekbeats/id681672176
 [Egoist]: https://itunes.apple.com/us/app/egoist/id859084874
 [iFretless Bass]: https://itunes.apple.com/us/app/ifretless-bass/id512929963
+[DrumPerfect]: https://itunes.apple.com/us/app/drumperfect/id797220679
+[Sequential]: https://itunes.apple.com/us/app/sequential-for-ipad/id797390075
