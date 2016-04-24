@@ -14,7 +14,8 @@ exclude: [
     'package.json',
     'Gruntfile.js',
     'audio/*.wav',
-    'audio/*.aiff'
+    'audio/*.aiff',
+    'audio/drafts'
 ] 
 
 mode: prod

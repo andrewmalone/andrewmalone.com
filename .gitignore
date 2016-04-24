@@ -1,5 +1,6 @@
 _site
 _drafts
+audio/drafts
 node_modules
 .sass-cache
 css/main.css

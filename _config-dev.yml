@@ -1,1 +1,8 @@
 mode: dev
+exclude: [
+    'node_modules',
+    'package.json',
+    'Gruntfile.js',
+    'audio/2*.wav',
+    'audio/2*.aiff'
+] 
