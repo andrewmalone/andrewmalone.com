@@ -20,6 +20,10 @@ exclude: [
 
 mode: prod
 
+collections:
+  gear:
+    output: true
+
 defaults:
   -
     scope:
