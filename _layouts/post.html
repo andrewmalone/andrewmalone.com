@@ -7,6 +7,22 @@ layout: default
 	<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y"}}</time>
 	</header>
 	
+	{% if page.categories.size > 0 %}
+		{% if page.categories contains "fragments" and page.summary != true %}
+			{% assign posts = site.categories.fragments | sort: 'date' %}
+			{% for post in posts %}
+				{% if post.summary == true %}{% assign url = post.url %}{% endif %}
+				{% if post.id == page.id %}
+					{% assign num = forloop.index %}
+					{% break %}
+				{% endif %}
+			{% endfor %}
+			<aside class="category">
+			This is post number {{num | minus:1 }} of {{site.categories.fragments.size | minus:1 }} in a series of <a href="{{url}}">fragments</a>
+			</aside>
+		{% endif %}
+	{% endif %}
+	
 	<div class="content">
 	{{ content }}
 	</div>
