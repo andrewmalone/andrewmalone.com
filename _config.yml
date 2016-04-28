@@ -8,7 +8,7 @@ url: "http://andrewmalone.com"
 # Build settings
 markdown: kramdown
 markdown_ext: "markdown,md"
-permalink: /:year/:month/:day/:title/
+permalink: :categories/:year/:month/:day/:title/
 exclude: [
     'node_modules',
     'package.json',
