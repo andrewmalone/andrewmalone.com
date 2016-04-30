@@ -26,3 +26,5 @@
 [iFretless Bass]: https://itunes.apple.com/us/app/ifretless-bass/id512929963
 [DrumPerfect]: https://itunes.apple.com/us/app/drumperfect/id797220679
 [Sequential]: https://itunes.apple.com/us/app/sequential-for-ipad/id797390075
+[AUM]: https://itunes.apple.com/us/app/aum-audio-mixer/id1055636344
+[Audioshare]: https://itunes.apple.com/us/app/audioshare-audio-document/id543859300
