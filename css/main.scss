@@ -167,6 +167,14 @@ article .content {
 	}
 }
 
+aside.category {
+	border: 1px solid desaturate(lighten($text-color, 50%), 70%);
+	margin-top: 1em;
+	font-size: 80%;
+	padding: .5em;
+	border-radius: .4em;
+}
+
 .tags {
 	font-size: 80%;
 }
