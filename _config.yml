@@ -20,6 +20,10 @@ exclude: [
 
 mode: prod
 
+collections:
+  gear:
+    output: true
+
 defaults:
   -
     scope:
@@ -33,3 +37,9 @@ defaults:
       type: "drafts"
     values:
       layout: post
+  -
+    scope:
+      path: ""
+      type: gear
+    values:
+      layout: page

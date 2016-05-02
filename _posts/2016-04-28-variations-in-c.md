@@ -7,6 +7,8 @@ This is a 3 part pattern in C major.
 
 The first section is one of the earliest patterns I can remember coming up with on the ukulele - it is a simple C to F, but with a modified voicing for the F chord.
 
-The other two sections continue to evolve over time - every few months they change slightly, or sometimes I swap one out for a different pattern.
+The other two sections continue to evolve over time - every few months they change slightly, or sometimes I swap one out for a different pattern. This is how I'm currently playing it.
 
 {% include audio.html %}
+
+This pattern was played on my [Kala tenor ukulele](/gear/kala-kajte).
