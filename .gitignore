@@ -6,3 +6,5 @@ node_modules
 css/main.css
 css/main.css.map
 css/main_prefixed.css
+css/styleguide.css
+css/styleguide.css.map

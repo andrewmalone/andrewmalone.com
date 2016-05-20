@@ -1,0 +1,21 @@
+body {
+//	background: red;
+}
+
+.inactive {
+	display: none;
+}
+
+.item {
+	border: 1px solid black;
+	padding: 1em;
+	display: flex;
+}
+
+.item-info {
+	flex: 1;
+}
+
+.item-display {
+	flex: 5;
+}
