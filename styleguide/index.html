@@ -1,5 +1,5 @@
 ---
-layout: styleguide
+layout: styleguide_main
 ---
 {% assign prior_folder = "" %}
 {% for item in site.styleguide %}
@@ -20,7 +20,7 @@ layout: styleguide
 	</div>
 	<div class="item-display" id="item-display-{{ forloop.index }}">
 		<div class="rendered active">
-		{{ item.content }}
+		<iframe src="{{item.url}}" onload="setHeight(this)"></iframe>
 		</div>
 		<div class="code inactive">
 		{% highlight html %}{{ item.content }}{% endhighlight %}
@@ -30,6 +30,12 @@ layout: styleguide
 {% endfor %}
 
 <script>
+
+function setHeight(frame) {
+	console.log(frame)
+	frame.style.height = frame.contentWindow.document.body.scrollHeight + "px";
+}
+
 links = document.querySelectorAll(".item-controls a");
 links.forEach(function(item){
 	item.addEventListener("click", function(e){
