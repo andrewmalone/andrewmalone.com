@@ -1,0 +1,39 @@
+---
+layout: styleguide
+---
+{% for item in site.styleguide %}
+<div class="item">
+	<div class="item-info">
+		<h2>{{ item.title }}</h2>
+		{% if item.info %}<p>{{ item.info }}</p>{% endif %}
+	</div>
+	<div class="item-controls">
+		<ul>
+			<li><a href="#" data-for="item-display-{{ forloop.index }}">Code</a>
+		</ul>
+	</div>
+	<div class="item-display" id="item-display-{{ forloop.index }}">
+		<div class="rendered active">
+		{{ item.content }}
+		</div>
+		<div class="code inactive">
+		{% highlight html %}{{ item.content }}{% endhighlight %}
+		</div>
+	</div>
+</div>
+{% endfor %}
+
+<script>
+links = document.querySelectorAll(".item-controls a");
+links.forEach(function(item){
+	item.addEventListener("click", function(e){
+		id = item.getAttribute("data-for");
+		active = document.querySelector("#" + id + " .active")
+		inactive = document.querySelector("#" + id + " .inactive")
+		active.classList.remove("active");
+		active.classList.toggle("inactive");
+		inactive.classList.toggle("active");
+		inactive.classList.toggle("inactive");
+	});
+});
+</script>
