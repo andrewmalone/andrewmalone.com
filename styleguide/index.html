@@ -56,22 +56,43 @@ links.forEach(function(item){
 handles = document.querySelectorAll(".resizer");
 handles.forEach(function(handle) {
 	handle.addEventListener("mousedown", function(e) {
+		e.preventDefault();
 		startWidth = document.getElementsByTagName("iframe")[0].offsetWidth;
+		frameOffset = document.getElementsByTagName("iframe")[0].offsetLeft;
 		startX = e.clientX;
 		document.addEventListener("mousemove", move);
-		document.addEventListener("mouseup", up)
+		document.addEventListener("mouseup", up);
+		frames = document.querySelectorAll("iframe");
+		frames.forEach(function(frame) {
+			frame.contentWindow.document.addEventListener("mousemove", moveInFrame);
+			frame.contentWindow.document.addEventListener("mouseup", up);
+		})
+		function moveInFrame(e) {
+			x = e.clientX + frameOffset;
+			offset = x - startX;
+			width = startWidth + offset;
+			sizeFrames(width);
+		}
 		function move(e) {
-			// update all the widths...
 			offset = e.clientX - startX;
-			frames = document.querySelectorAll("iframe");
-			frames.forEach(function(frame) {
-				frame.style.width = startWidth + offset + "px";
-				setHeight(frame);
-			});
+			width = startWidth + offset;
+			sizeFrames(width);
 		}
 		function up() {
-			document.removeEventListener("mousemove", move)
-			document.removeEventListener("mouseup", up)
+			document.removeEventListener("mousemove", move);
+			document.removeEventListener("mouseup", up);
+			frames = document.querySelectorAll("iframe");
+			frames.forEach(function(frame) {
+				frame.contentWindow.document.removeEventListener("mousemove", moveInFrame);
+				frame.contentWindow.document.removeEventListener("mouseup", up);
+			})
+		}
+		function sizeFrames(width) {
+			frames = document.querySelectorAll("iframe");
+			frames.forEach(function(frame) {
+				frame.style.width = width + "px";
+				setHeight(frame);
+			});
 		}
 	});
 });
