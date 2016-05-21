@@ -18,9 +18,7 @@ layout: styleguide_main
 			{% if item.info %}<p>{{ item.info }}</p>{% endif %}
 		</div>
 		<div class="item-controls">
-			<ul>
-				<li><a href="#" data-for="item-display-{{ forloop.index }}">Code</a>
-			</ul>
+			{% if item.code %}<a href="#" data-for="item-display-{{ forloop.index }}">Code</a>{% endif %}
 		</div>
 		<div class="item-display" id="item-display-{{ forloop.index }}">
 			<div class="rendered active">

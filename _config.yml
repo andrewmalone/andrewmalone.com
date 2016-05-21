@@ -53,3 +53,4 @@ defaults:
       type: styleguide
     values:
       layout: styleguide_item
+      code: true
