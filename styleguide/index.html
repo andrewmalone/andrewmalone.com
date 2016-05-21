@@ -15,7 +15,7 @@ layout: styleguide_main
 	<div class="item">
 		<div class="item-info">
 			<h3>{{ item.title }}</h3>
-			{% if item.info %}<p>{{ item.info }}</p>{% endif %}
+			{% if item.info %}<p>{{ item.info | markdownify }}</p>{% endif %}
 		</div>
 		<div class="item-controls">
 			{% if item.code %}<a href="#" data-for="item-display-{{ forloop.index }}">Code</a>{% endif %}
