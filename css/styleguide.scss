@@ -18,6 +18,13 @@ h3 {
 	font-weight: 500;
 }
 
+pre {
+    border: 1px dotted #333;
+    padding: .5em;
+    font-family: Source Code Pro, monospace;
+    background: #eee;
+}
+
 .inactive {
 	display: none;
 }
