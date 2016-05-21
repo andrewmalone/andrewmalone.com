@@ -2,31 +2,35 @@
 layout: styleguide_main
 ---
 {% assign prior_folder = "" %}
+
 {% for item in site.styleguide %}
-{% assign path = item.path | split: '/' %}
-{% assign len = path[1] | size %}
-{% assign folder = path[1] | slice: 3, len %}
-{% if folder != prior_folder %}{{ folder }}{% endif %}
-{% assign prior_folder = folder %}
-<div class="item">
-	<div class="item-info">
-		<h2>{{ item.title }}</h2>
-		{% if item.info %}<p>{{ item.info }}</p>{% endif %}
-	</div>
-	<div class="item-controls">
-		<ul>
-			<li><a href="#" data-for="item-display-{{ forloop.index }}">Code</a>
-		</ul>
-	</div>
-	<div class="item-display" id="item-display-{{ forloop.index }}">
-		<div class="rendered active">
-		<iframe src="{{item.url}}" onload="setHeight(this)"></iframe>
+	{% assign path = item.path | split: '/' %}
+	{% assign len = path[1] | size %}
+	{% assign folder = path[1] | slice: 3, len %}
+	
+	{% if folder != prior_folder %}
+		<h2>{{ folder }}</h2>
+	{% endif %}
+	{% assign prior_folder = folder %}
+	<div class="item">
+		<div class="item-info">
+			<h3>{{ item.title }}</h3>
+			{% if item.info %}<p>{{ item.info }}</p>{% endif %}
 		</div>
-		<div class="code inactive">
-		{% highlight html %}{{ item.content }}{% endhighlight %}
+		<div class="item-controls">
+			<ul>
+				<li><a href="#" data-for="item-display-{{ forloop.index }}">Code</a>
+			</ul>
+		</div>
+		<div class="item-display" id="item-display-{{ forloop.index }}">
+			<div class="rendered active">
+			<iframe src="{{item.url}}" onload="setHeight(this)"></iframe>
+			</div>
+			<div class="code inactive">
+			{% highlight html %}{{ item.content }}{% endhighlight %}
+			</div>
 		</div>
 	</div>
-</div>
 {% endfor %}
 
 <script>
