@@ -24,7 +24,8 @@ layout: styleguide_main
 		</div>
 		<div class="item-display" id="item-display-{{ forloop.index }}">
 			<div class="rendered active">
-			<iframe src="{{item.url}}" onload="setHeight(this)"></iframe>
+			<iframe src="{{item.url}}" onload="setHeight(this)" id="iframe-{{ forloop.index }}"></iframe>
+			<div class="resizer" data-for="iframe-{{ forloop.index }}"></div>
 			</div>
 			<div class="code inactive">
 			{% highlight html %}{{ item.content }}{% endhighlight %}
@@ -36,7 +37,6 @@ layout: styleguide_main
 <script>
 
 function setHeight(frame) {
-	console.log(frame)
 	frame.style.height = frame.contentWindow.document.body.scrollHeight + "px";
 }
 
@@ -52,4 +52,29 @@ links.forEach(function(item){
 		inactive.classList.toggle("inactive");
 	});
 });
+
+handles = document.querySelectorAll(".resizer");
+handles.forEach(function(handle) {
+	handle.addEventListener("mousedown", function(e) {
+		startWidth = document.getElementsByTagName("iframe")[0].offsetWidth;
+		startX = e.clientX;
+		document.addEventListener("mousemove", move);
+		document.addEventListener("mouseup", up)
+		function move(e) {
+			// update all the widths...
+			offset = e.clientX - startX;
+			frames = document.querySelectorAll("iframe");
+			frames.forEach(function(frame) {
+				frame.style.width = startWidth + offset + "px";
+				setHeight(frame);
+			});
+		}
+		function up() {
+			document.removeEventListener("mousemove", move)
+			document.removeEventListener("mouseup", up)
+		}
+	});
+});
+
+
 </script>
