@@ -47,13 +47,12 @@ header {
 	}
 }
 
-main {
-	padding-top: .5em;
-}
-
 h2 {
 	font-size: 1.5em;
-	margin: 1em 0 .5em .5em; 
+	padding: .5em; 
+	text-transform: uppercase;
+	background: beige;
+	border-bottom: 1px solid rebeccapurple;
 }
 
 h3 {
@@ -69,7 +68,7 @@ pre {
 }
 
 .item {
-	border: 1px solid black;
+	border-bottom: 1px solid rebeccapurple;
 	padding: 1em;
 	display: flex;
 }
@@ -78,8 +77,12 @@ pre {
 	flex: 1;
 }
 
+.item-controls {
+	flex: .25;
+}
+
 .item-display {
-	flex: 5;
+	flex: 6;
 }
 
 pre {
