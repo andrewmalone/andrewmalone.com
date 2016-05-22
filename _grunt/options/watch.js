@@ -10,6 +10,8 @@ module.exports = {
             'christmas/**',
             '_data/**',
             '_gear/**',
+            '_styleguide/**',
+            'styleguide/**',
             '*.html',
             '*.md',
             '**/*.md'

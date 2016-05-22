@@ -1,0 +1,133 @@
+---
+layout: styleguide_main
+---
+<header>
+	<h1>andrewmalone.com styleguide</h1>
+	<div id="nav">
+		Jump to...
+		<ul>
+			{% assign prior_folder = "" %}
+			{% for item in site.styleguide %}
+			{% assign path = item.path | split: '/' %}
+			{% assign len = path[1] | size %}
+			{% assign folder = path[1] | slice: 3, len %}
+			
+			{% if folder != prior_folder %}
+			<li class="folder"><a href="#{{ folder }}">{{ folder }}</a>
+			{% endif %}
+			{% assign prior_folder = folder %}
+			
+			<li><a href="#item-{{ forloop.index }}">{{ item.title }}</a>
+			{% endfor %}
+		</ul>
+	</div>
+</header>
+
+<main>
+{% assign prior_folder = "" %}
+
+{% for item in site.styleguide %}
+	{% assign path = item.path | split: '/' %}
+	{% assign len = path[1] | size %}
+	{% assign folder = path[1] | slice: 3, len %}
+	
+	{% if folder != prior_folder %}
+		<a class="anchor" name="{{ folder }}"></a>
+		<h2>{{ folder }}</h2>
+	{% endif %}
+	{% assign prior_folder = folder %}
+	<a class="anchor" name="item-{{ forloop.index }}"></a>
+	<div class="item">
+		<div class="item-info">
+			<h3>{{ item.title }}</h3>
+			{% if item.info %}<p>{{ item.info | markdownify }}</p>{% endif %}
+		</div>
+		<div class="item-controls">
+			{% if item.code %}<a href="#" data-for="item-display-{{ forloop.index }}">Code</a>{% endif %}
+		</div>
+		<div class="item-display" id="item-display-{{ forloop.index }}">
+			<div class="rendered active">
+			<iframe src="{{item.url}}" onload="setHeight(this)" id="iframe-{{ forloop.index }}"></iframe>
+			<div class="resizer" data-for="iframe-{{ forloop.index }}"></div>
+			</div>
+			<div class="code inactive">
+			{% highlight html %}{{ item.content }}{% endhighlight %}
+			</div>
+		</div>
+	</div>
+{% endfor %}
+</main>
+
+<script>
+
+function setHeight(frame) {
+	frame.style.height = frame.contentWindow.document.body.scrollHeight + "px";
+}
+
+// set the correct height for sticky header and anchor links
+h = document.querySelector("header").offsetHeight;
+document.querySelector("main").style.marginTop = h + "px";
+document.querySelectorAll("a.anchor").forEach(function(a) {
+	a.style.top = "-" + h + "px";
+});
+
+links = document.querySelectorAll(".item-controls a");
+links.forEach(function(item){
+	item.addEventListener("click", function(e){
+		e.preventDefault();
+		id = item.getAttribute("data-for");
+		active = document.querySelector("#" + id + " .active")
+		inactive = document.querySelector("#" + id + " .inactive")
+		active.classList.remove("active");
+		active.classList.toggle("inactive");
+		inactive.classList.toggle("active");
+		inactive.classList.toggle("inactive");
+	});
+});
+
+handles = document.querySelectorAll(".resizer");
+handles.forEach(function(handle) {
+	handle.addEventListener("mousedown", function(e) {
+		e.preventDefault();
+		startWidth = document.getElementsByTagName("iframe")[0].offsetWidth;
+		frameOffset = document.getElementsByTagName("iframe")[0].offsetLeft;
+		startX = e.clientX;
+		document.addEventListener("mousemove", move);
+		document.addEventListener("mouseup", up);
+		frames = document.querySelectorAll("iframe");
+		frames.forEach(function(frame) {
+			frame.contentWindow.document.addEventListener("mousemove", moveInFrame);
+			frame.contentWindow.document.addEventListener("mouseup", up);
+		})
+		function moveInFrame(e) {
+			x = e.clientX + frameOffset;
+			offset = x - startX;
+			width = startWidth + offset;
+			sizeFrames(width);
+		}
+		function move(e) {
+			offset = e.clientX - startX;
+			width = startWidth + offset;
+			sizeFrames(width);
+		}
+		function up() {
+			document.removeEventListener("mousemove", move);
+			document.removeEventListener("mouseup", up);
+			frames = document.querySelectorAll("iframe");
+			frames.forEach(function(frame) {
+				frame.contentWindow.document.removeEventListener("mousemove", moveInFrame);
+				frame.contentWindow.document.removeEventListener("mouseup", up);
+			})
+		}
+		function sizeFrames(width) {
+			frames = document.querySelectorAll("iframe");
+			frames.forEach(function(frame) {
+				frame.style.width = width + "px";
+				setHeight(frame);
+			});
+		}
+	});
+});
+
+
+</script>
