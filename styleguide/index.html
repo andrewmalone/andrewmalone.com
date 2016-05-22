@@ -1,6 +1,29 @@
 ---
 layout: styleguide_main
 ---
+<header>
+	<h1>Andrewmalone.com Styleguide</h1>
+	<div id="nav">
+		Jump to...
+		<ul>
+			{% assign prior_folder = "" %}
+			{% for item in site.styleguide %}
+			{% assign path = item.path | split: '/' %}
+			{% assign len = path[1] | size %}
+			{% assign folder = path[1] | slice: 3, len %}
+			
+			{% if folder != prior_folder %}
+			<li class="folder"><a href="#{{ folder }}">{{ folder }}</a>
+			{% endif %}
+			{% assign prior_folder = folder %}
+			
+			<li><a href="#item-{{ forloop.index }}">{{ item.title }}</a>
+			{% endfor %}
+		</ul>
+	</div>
+</header>
+
+<main>
 {% assign prior_folder = "" %}
 
 {% for item in site.styleguide %}
@@ -9,9 +32,11 @@ layout: styleguide_main
 	{% assign folder = path[1] | slice: 3, len %}
 	
 	{% if folder != prior_folder %}
+		<a class="anchor" name="{{ folder }}"></a>
 		<h2>{{ folder }}</h2>
 	{% endif %}
 	{% assign prior_folder = folder %}
+	<a class="anchor" name="item-{{ forloop.index }}"></a>
 	<div class="item">
 		<div class="item-info">
 			<h3>{{ item.title }}</h3>
@@ -31,12 +56,20 @@ layout: styleguide_main
 		</div>
 	</div>
 {% endfor %}
+</main>
 
 <script>
 
 function setHeight(frame) {
 	frame.style.height = frame.contentWindow.document.body.scrollHeight + "px";
 }
+
+// set the correct height for sticky header and anchor links
+h = document.querySelector("header").offsetHeight;
+document.querySelector("main").style.marginTop = h + "px";
+document.querySelectorAll("a.anchor").forEach(function(a) {
+	a.style.top = "-" + h + "px";
+});
 
 links = document.querySelectorAll(".item-controls a");
 links.forEach(function(item){
