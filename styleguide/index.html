@@ -41,6 +41,7 @@ function setHeight(frame) {
 links = document.querySelectorAll(".item-controls a");
 links.forEach(function(item){
 	item.addEventListener("click", function(e){
+		e.preventDefault();
 		id = item.getAttribute("data-for");
 		active = document.querySelector("#" + id + " .active")
 		inactive = document.querySelector("#" + id + " .inactive")
