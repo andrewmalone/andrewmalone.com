@@ -30,7 +30,10 @@ with open(draft_file) as f:
 # create a new folder for the audio files
 if len(audio_files) > 0:
     audio_dir = "audio/{}".format(today)
-    os.makedirs(audio_dir)
+    try:
+    	os.makedirs(audio_dir)
+    except:
+    	pass
 
 # move the audio files
 for audio_file in audio_files:
