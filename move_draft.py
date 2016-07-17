@@ -8,7 +8,8 @@ draft_file = sys.argv[1]
 # draft_file = "_drafts/uke-ideas/Variations in c.md"
 today = datetime.now().strftime("%Y-%m-%d")
 
-# find if there is an audio file to deal with
+# find if there is an audio file to deal with and check for categories
+category = ""
 audio_files = []
 with open(draft_file) as f:
     front_matter = False
@@ -23,6 +24,8 @@ with open(draft_file) as f:
         if "file:" in line:
             audio_file = line.split(":")[1]
             audio_files.append(audio_file.strip())
+        if "category" in line:
+        	category = line.split(":")[1].strip() + "/"
 
 # create a new folder for the audio files
 if len(audio_files) > 0:
@@ -42,5 +45,5 @@ for audio_file in audio_files:
     subprocess.call(["lame", "-V6", new_file])
 
 # move the file to posts and rename it
-post_file = "_posts/{}-{}".format(today, draft_file.split("/")[-1].replace(" ", "-").lower())
+post_file = "_posts/{}{}-{}".format(category, today, draft_file.split("/")[-1].replace(" ", "-").lower())
 shutil.move(draft_file, post_file)
