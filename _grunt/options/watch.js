@@ -11,10 +11,10 @@ module.exports = {
             '_data/**',
             '_gear/**',
             '_styleguide/**',
-            'styleguide/**',
             '*.html',
             '*.md',
-            '**/*.md'
+            '**/*.md',
+            '_categories/**'
         ],
         tasks: ['sass', 'autoprefixer', 'jshint', 'shell:jekyllBuild'],
         options: {

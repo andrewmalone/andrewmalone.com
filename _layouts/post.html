@@ -10,16 +10,14 @@ layout: default
 	{% if page.categories.size > 0 %}
 		{% if page.categories contains "fragments" and page.summary != true %}
 			{% assign posts = site.categories.fragments | sort: 'date' %}
-			{% assign posts = posts | sort: 'summary', 'last' %}
 			{% for post in posts %}
-				{% if post.summary == true %}{% assign url = post.url %}{% endif %}
 				{% if post.id == page.id %}
 					{% assign num = forloop.index %}
 					{% break %}
 				{% endif %}
 			{% endfor %}
 			<aside class="category">
-			This is post {{num | minus:1 }} of {{site.categories.fragments.size | minus:1 }} in a series of <a href="{{url}}">fragments</a>
+			This is post {{num}} of {{site.categories.fragments.size}} in a series of <a href="/{{page.categories}}">fragments</a>
 			</aside>
 		{% endif %}
 	{% endif %}

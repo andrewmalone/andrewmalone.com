@@ -18,7 +18,10 @@ exclude: [
     'audio/*.wav',
     'audio/*.aiff',
     '*.py'
-] 
+]
+include: [
+	'_categories'
+]
 
 mode: prod
 
@@ -35,6 +38,12 @@ defaults:
       type: "posts"
     values:
       layout: post
+  -
+    scope:
+      path: '_posts/fragments'
+      type: "posts"
+    values:
+      permalink: :categories/:title/
   -
     scope:
       path: ""

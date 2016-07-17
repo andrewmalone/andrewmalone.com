@@ -1,13 +1,13 @@
 ---
 title: Fragments
-category: fragments
-summary: true
+layout: page
+permalink: fragments/index.html
 ---
 Ever since I got my first ukulele for Christmas in 2010, I've been somewhat obsessed with playing it and developing different musical ideas. I have a tendency to come up with patterns that I play over and over. They aren't quite songs, though some of them do have several sections. Most have no lyrics or even melody.
 
 I've built up quite a few of these over the past six years. I don't know if any will ever turn into full songs, but I thought I'd at least document and memorialize them.
 
-So far, there are {{site.categories.fragments.size | minus: 1}} fragment posts:
+So far, there are {{site.categories.fragments.size}} fragment posts:
 {% assign posts = site.categories.fragments | sort: 'date' %}
 {% for post in posts %}
 {% if post.summary != true -%}* [{{post.title}}]({{post.url}}){% endif %}{% endfor %}
