@@ -1,0 +1,8 @@
+{
+	fragments: {
+		name: "Fragments"
+	},
+	uke-breakbeat: {
+		name: "Ukulele breakbeats"
+	}
+}
