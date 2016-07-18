@@ -23,6 +23,8 @@ include: [
 	'_categories'
 ]
 
+gems:
+  - jekyll-redirect-from
 mode: prod
 
 collections:
@@ -41,6 +43,12 @@ defaults:
   -
     scope:
       path: '_posts/fragments'
+      type: "posts"
+    values:
+      permalink: :categories/:title/
+  -
+    scope:
+      path: '_posts/uke-breakbeat'
       type: "posts"
     values:
       permalink: :categories/:title/
