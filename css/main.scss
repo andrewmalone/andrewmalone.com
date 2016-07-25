@@ -79,6 +79,11 @@ header[role="banner"] {
 	//max-width: 50rem;
 	//margin:auto;
 	background:	linear-gradient(complement($base) 7%, desaturate(lighten($base, 40%), 20%) 7%);
+	&>* {
+		max-width: 50rem;
+		margin:auto;
+		padding-left: 1rem;
+	}
 	h1 {
 		max-width: 50rem;
 		//width: 20em;
@@ -107,6 +112,9 @@ header[role="banner"] {
 			font-family: fredericka-the-great, serif;
 			border: none;
 		}
+	}
+	li {
+		display: inline-block;
 	}
 }
 
