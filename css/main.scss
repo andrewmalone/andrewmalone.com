@@ -75,18 +75,18 @@ figcaption {
 }
 
 header[role="banner"] {
-	//position: relative;
-	//max-width: 50rem;
-	//margin:auto;
 	background:	linear-gradient(complement($base) 7%, desaturate(lighten($base, 40%), 20%) 7%);
+	&>* {
+		max-width: 50rem;
+		margin:auto;
+		padding-left: 1rem;
+	}
 	h1 {
 		max-width: 50rem;
-		//width: 20em;
 		margin: auto;
 		font-size:1.5em;
 		line-height: 1em;
-		text-align: center;
-		padding: .4em 0 .3em 0;
+		padding: .4em 0 0 1rem;
 		@include breakpoint($bp-small) {
 		  font-size:1.8em;
 		}
@@ -101,12 +101,29 @@ header[role="banner"] {
 		.andrew {
 			color:lighten($base, 20%);
 		}
-		//background:	linear-gradient(complement($base) .05em, desaturate(lighten($base, 40%), 20%) .1em);
 		a {
 			color: desaturate(lighten($base, 30%),50%);
 			font-family: fredericka-the-great, serif;
 			border: none;
 		}
+	}
+	ul {
+		display: flex;
+		padding-bottom: .2em;
+	}
+	li {
+		font-family: neuton;
+		a {
+			padding: 0 .8em;
+		}
+		&:first-child a {
+			padding-left: 0;
+		}
+		&:not(:last-child):after {
+			content: "|";
+			color: lighten($text-color, 50%);
+		}
+		
 	}
 }
 
