@@ -17,6 +17,7 @@ exclude: [
     'Gruntfile.js',
     'audio/*.wav',
     'audio/*.aiff',
+    'audio/*.mp4',
     '*.py'
 ]
 include: [
