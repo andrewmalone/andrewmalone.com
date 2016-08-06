@@ -8,31 +8,11 @@
 @import '_includes/components/footer';
 @import '_includes/components/header';
 @import '_includes/components/post_list';
-
+@import '_includes/components/posts';
 
 
 .text-small {
 	font-size: 80%;
-}
-
-aside.category {
-	border: 1px solid desaturate(lighten($text-color, 50%), 70%);
-	margin-top: 1em;
-	font-size: 80%;
-	padding: .5em;
-	border-radius: .4em;
-}
-
-.tags {
-	font-size: 80%;
-}
-
-.pagination {
-	margin-top: 1em;
-	font-size: 80%;
-	p {
-		margin: 0;
-	}
 }
 
 p,audio {
@@ -42,6 +22,7 @@ p,audio {
 h3 {
 	margin-bottom: .5em;
 }
+
 .audiotitle {
 	font-size: 85%;
 }
