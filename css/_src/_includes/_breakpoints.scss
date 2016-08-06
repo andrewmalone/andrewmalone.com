@@ -1,0 +1,9 @@
+$bp-small: 20em;
+$bp-medium: 35em;
+$bp-large: 40em;
+
+@mixin breakpoint($point) {
+	@media all and (min-width: $point) {
+		@content;
+	}
+}
