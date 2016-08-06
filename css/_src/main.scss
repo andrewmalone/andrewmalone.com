@@ -76,60 +76,6 @@ figcaption {
 	font-size: 75%;
 }
 
-header[role="banner"] {
-	background:	linear-gradient(complement($base) 7%, desaturate(lighten($base, 40%), 20%) 7%);
-	&>* {
-		max-width: 50rem;
-		margin:auto;
-		padding-left: 1rem;
-	}
-	h1 {
-		max-width: 50rem;
-		margin: auto;
-		font-size:1.5em;
-		line-height: 1em;
-		padding: .4em 0 0 1rem;
-		@include breakpoint($bp-small) {
-		  font-size:1.8em;
-		}
-		@include breakpoint($bp-medium) {
-		  font-size:2em;
-		  text-align:left;
-		  padding-left:1rem;
-		}
-		.malone {
-			color:$base;
-		}
-		.andrew {
-			color:lighten($base, 20%);
-		}
-		a {
-			color: desaturate(lighten($base, 30%),50%);
-			font-family: fredericka-the-great, serif;
-			border: none;
-		}
-	}
-	ul {
-		display: flex;
-		padding-bottom: .2em;
-	}
-	li {
-		font-family: neuton;
-		a {
-			padding: 0 .8em;
-		}
-		&:first-child a {
-			padding-left: 0;
-		}
-		&:not(:last-child):after {
-			content: "|";
-			color: lighten($text-color, 50%);
-		}
-		
-	}
-}
-
-
 main {
 	padding:1rem;
 }
@@ -222,8 +168,6 @@ h3 {
 .audiotitle {
 	font-size: 85%;
 }
-
-
 
 footer {
 	h3 {
