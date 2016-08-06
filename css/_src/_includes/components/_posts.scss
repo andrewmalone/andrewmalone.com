@@ -1,5 +1,5 @@
 aside.category {
-	border: 1px solid desaturate(lighten($text-color, 50%), 70%);
+	border: 1px solid $text-muted-color;
 	margin-top: 1em;
 	font-size: 80%;
 	padding: .5em;

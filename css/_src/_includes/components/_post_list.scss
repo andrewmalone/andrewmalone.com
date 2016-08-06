@@ -17,6 +17,6 @@ ul.posts li {
 		margin-right: .5em;
 	}
 	&.draft span {
-		background: #ccc;
+		background: $draft-light-color;
 	}
 }

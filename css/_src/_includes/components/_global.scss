@@ -2,7 +2,7 @@
 
 body {
 	font:110%/1.5 pt-sans, sans-serif;
-	background:#ececec;
+	background: $background-color;
 	color: $text-color;
 }
 
@@ -25,24 +25,24 @@ h3 {
 
 a {
 	text-decoration: none;
-	color: $base;
+	color: $base-color;
 	//border-bottom: 1px dotted lighten($base, 10%);
 }
 a:hover {
-	color: darken($base, 15%);
+	color: $base-dark-color;
 }
 
 article {
 	max-width: 36em;
 	margin: auto;
-	background:#ececec;
+	background: $background-color;
 }
 
 article header {
 	line-height:1em;
 	h1 {
 		font-family: neuton;
-		text-shadow:1px 1px 1px #aaa;
+		text-shadow:1px 1px 1px $dark-gray-color;
 		font-size:150%;
 		line-height:1em;
 		@include breakpoint($bp-small) {
@@ -54,19 +54,19 @@ article header {
 		&.draft {
 			&:before {
 				content: "(draft) ";
-				color: #888;
+				color: $draft-color;
 			}
 		}
 	}
 	time {
 		font-size:80%;
-		color: desaturate(lighten($text-color, 50%), 70%);
+		color: $text-muted-color;
 	}
 }
 
 article .content {
 	margin-top: 1em;	
-	border-bottom: 1px solid desaturate(lighten($text-color, 50%), 70%);
+	border-bottom: 1px solid $text-muted-color;
 	font-size: 70%;
 	@include breakpoint($bp-small) {
 		font-size:80%;

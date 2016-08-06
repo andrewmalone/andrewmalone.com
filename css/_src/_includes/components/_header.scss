@@ -1,5 +1,5 @@
 header[role="banner"] {
-	background:	linear-gradient(complement($base) 7%, desaturate(lighten($base, 40%), 20%) 7%);
+	background:	linear-gradient($complement-color 7%, $secondary-background-color 7%);
 	&>* {
 		max-width: 50rem;
 		margin:auto;
@@ -20,13 +20,13 @@ header[role="banner"] {
 		  padding-left:1rem;
 		}
 		.malone {
-			color:$base;
+			color:$base-color;
 		}
 		.andrew {
-			color:lighten($base, 20%);
+			color:$base-light-color;
 		}
 		a {
-			color: desaturate(lighten($base, 30%),50%);
+			color: $base-muted-color;
 			font-family: fredericka-the-great, serif;
 			border: none;
 		}
@@ -45,7 +45,7 @@ header[role="banner"] {
 		}
 		&:not(:last-child):after {
 			content: "|";
-			color: lighten($text-color, 50%);
+			color: $text-muted-color;
 		}
 		
 	}
