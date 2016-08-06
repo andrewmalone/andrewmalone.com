@@ -3,8 +3,8 @@ layout: default
 ---
 <article>
 	<header>
-	<h1>{{ page.title }}</h1>
-	<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y"}}</time>
+	<h1{% if page.draft %} class="draft"{% endif %}>{{ page.title }}</h1>
+	{% unless page.draft %}<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y"}}</time>{% endunless %}
 	</header>
 	
 	{% if page.categories.size == 1 %}

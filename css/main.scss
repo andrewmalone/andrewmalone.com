@@ -152,6 +152,12 @@ article header {
 		@include breakpoint($bp-medium) {
 			font-size: 200%;
 		}
+		&.draft {
+			&:before {
+				content: "(draft) ";
+				color: #888;
+			}
+		}
 	}
 	time {
 		font-size:80%;
