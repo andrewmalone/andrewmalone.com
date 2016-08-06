@@ -1,24 +1,11 @@
 @import '_includes/reset';
 @import '_includes/breakpoints';
 @import '_includes/colors';
+@import '_includes/fonts';
 
+@import '_includes/components/global';
 @import '_includes/components/footer';
 @import '_includes/components/header';
-
-* {box-sizing: border-box;}
-
-em {
-	font-style: italic;
-}
-
-h2 {
-	font-weight: bold;
-	font-size: 1.15em;
-}
-
-h3 {
-	font-weight: bold;
-}
 
 ul.posts li {
 	display: flex;	
@@ -43,24 +30,10 @@ ul.posts li {
 	}
 }
 
-
-body {
-	font:110%/1.5 pt-sans, sans-serif;
-	background:#ececec;
-	color: $text-color;
-}
 .text-small {
 	font-size: 80%;
 }
 
-a {
-	text-decoration: none;
-	color: $base;
-	//border-bottom: 1px dotted lighten($base, 10%);
-}
-a:hover {
-	color: darken($base, 15%);
-}
 
 figure {
 	border: 1px dotted lighten($base, 20%);
@@ -71,10 +44,6 @@ figure {
 
 figcaption {
 	font-size: 75%;
-}
-
-main {
-	padding:1rem;
 }
 
 
