@@ -1,0 +1,22 @@
+ul.posts li {
+	display: flex;	
+	align-items: baseline;
+	padding-top: .3em;
+	a {
+		flex: 1;
+		font-size: 80%;
+		@include breakpoint($bp-medium)
+		{
+			font-size: 100%;
+		} 
+	}
+	span {
+		width:6.5em;
+		text-align: right;
+		font-size: 60%;
+		margin-right: .5em;
+	}
+	&.draft span {
+		background: #ccc;
+	}
+}
