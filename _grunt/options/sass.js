@@ -4,8 +4,8 @@ module.exports = {
 	    style: 'compressed'  
       },
       files: {
-        'css/main.css': 'css/main.scss',
-        'css/styleguide.css': 'css/styleguide.scss'
+        'css/main.css': 'css/_src/main.scss',
+        'css/styleguide.css': 'css/_src/styleguide.scss'
       }
     }
 }
