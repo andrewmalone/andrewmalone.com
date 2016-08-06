@@ -1,4 +1,9 @@
 @import '_includes/reset';
+@import '_includes/breakpoints';
+@import '_includes/colors';
+
+@import '_includes/components/footer';
+@import '_includes/components/header';
 
 * {box-sizing: border-box;}
 
