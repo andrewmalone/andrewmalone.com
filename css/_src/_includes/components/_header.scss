@@ -1,0 +1,52 @@
+header[role="banner"] {
+	background:	linear-gradient($complement-color 7%, $secondary-background-color 7%);
+	&>* {
+		max-width: 50rem;
+		margin:auto;
+		padding-left: 1rem;
+	}
+	h1 {
+		max-width: 50rem;
+		margin: auto;
+		font-size:1.5em;
+		line-height: 1em;
+		padding: .4em 0 0 1rem;
+		@include breakpoint($bp-small) {
+		  font-size:1.8em;
+		}
+		@include breakpoint($bp-medium) {
+		  font-size:2em;
+		  text-align:left;
+		  padding-left:1rem;
+		}
+		.malone {
+			color:$base-color;
+		}
+		.andrew {
+			color:$base-light-color;
+		}
+		a {
+			color: $base-muted-color;
+			font-family: $header-font;
+			border: none;
+		}
+	}
+	ul {
+		display: flex;
+		padding-bottom: .2em;
+	}
+	li {
+		font-family: $headline-font;
+		a {
+			padding: 0 .8em;
+		}
+		&:first-child a {
+			padding-left: 0;
+		}
+		&:not(:last-child):after {
+			content: "|";
+			color: $text-muted-color;
+		}
+		
+	}
+}

@@ -1,0 +1,52 @@
+footer {
+	h3 {
+		font-weight: bold;
+		border-bottom: 1px solid $dark-gray-color;
+		margin-bottom: .5em;
+	}
+	div {
+		padding: 1em 1em 0;
+		@include breakpoint($bp-medium) {
+			float: left;
+			width: 50%;
+		}
+	}
+	background: $secondary-background-color;
+	border-radius: .5em;
+	max-width:50rem;
+	padding:1em;
+	margin:0 auto 2em;;
+	svg {
+		width:1.5em;
+		height:1.5em;
+		vertical-align: middle;
+	}
+	line-height:1.3em;
+	font-size:60%;
+	
+	@include breakpoint($bp-small) {
+		font-size:70%;
+	}
+	@include breakpoint($bp-medium) {
+		font-size:80%;
+		overflow: hidden
+	}
+	a {
+		border: none;
+		color: $text-color;
+		display: inline-block;
+		padding:.2em .5em .3em .5em;
+		transition: background .3s;
+		border-radius:.5em;
+		width: 100%;
+	}
+	a:hover {
+		background: $base-light-color;
+	}
+	.rss {
+		padding-left:0;
+	}
+	.rss:hover {
+		background:none;
+	}
+}

@@ -1,0 +1,19 @@
+aside.category {
+	border: 1px solid $text-muted-color;
+	margin-top: 1em;
+	font-size: 80%;
+	padding: .5em;
+	border-radius: .4em;
+}
+
+.tags {
+	font-size: 80%;
+}
+
+.pagination {
+	margin-top: 1em;
+	font-size: 80%;
+	p {
+		margin: 0;
+	}
+}
