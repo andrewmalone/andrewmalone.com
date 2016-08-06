@@ -45,6 +45,9 @@ ul.posts li {
 		font-size: 60%;
 		margin-right: .5em;
 	}
+	&.draft span {
+		background: #ccc;
+	}
 }
 
 
