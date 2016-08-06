@@ -8,6 +8,8 @@ Going back to something a bit simpler - this is a slower two bar beat using some
 
 {% include audio.html %}
 
+{% include img src="ubb10.png" alt="KORG Gadget screenshot" %}
+
 Made with:
 
 * [KORG Gadget]

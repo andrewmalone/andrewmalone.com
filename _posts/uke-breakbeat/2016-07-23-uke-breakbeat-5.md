@@ -7,6 +7,8 @@ tags: 98bpm
 Trying to focus on extending the drum loops beyond one or two bars. This one is four bars.
 {% include audio.html %}
 
+{% include img src="ubb05.png" alt="KORG Gadget screenshot" %}
+
 Made with:
 
 * [KORG Gadget]

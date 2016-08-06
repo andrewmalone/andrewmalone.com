@@ -8,6 +8,8 @@ For this one, I had to put aside my baritone uke since a string broke and I didn
 
 {% include audio.html %}
 
+{% include img src="ubb03.png" alt="KORG Gadget screenshot" %}
+
 Made with:
 
 * [KORG Gadget]

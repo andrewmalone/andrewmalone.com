@@ -10,6 +10,8 @@ I finally put new strings on my baritone, so am using that again for some of the
 
 {% include audio.html %}
 
+{% include img src="ubb07.png" alt="KORG Gadget screenshot" %}
+
 Made with:
 
 * [KORG Gadget]
