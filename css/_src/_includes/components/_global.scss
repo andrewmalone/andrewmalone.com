@@ -31,3 +31,60 @@ a {
 a:hover {
 	color: darken($base, 15%);
 }
+
+article {
+	max-width: 36em;
+	margin: auto;
+	background:#ececec;
+}
+
+article header {
+	line-height:1em;
+	h1 {
+		font-family: neuton;
+		text-shadow:1px 1px 1px #aaa;
+		font-size:150%;
+		line-height:1em;
+		@include breakpoint($bp-small) {
+			font-size: 175%;
+		}
+		@include breakpoint($bp-medium) {
+			font-size: 200%;
+		}
+		&.draft {
+			&:before {
+				content: "(draft) ";
+				color: #888;
+			}
+		}
+	}
+	time {
+		font-size:80%;
+		color: desaturate(lighten($text-color, 50%), 70%);
+	}
+}
+
+article .content {
+	margin-top: 1em;	
+	border-bottom: 1px solid desaturate(lighten($text-color, 50%), 70%);
+	font-size: 70%;
+	@include breakpoint($bp-small) {
+		font-size:80%;
+	}
+	@include breakpoint($bp-medium) {
+		font-size:100%;
+	}
+	@include breakpoint($bp-large) {
+		font-size:110%;
+	}
+	ul {
+		margin:0 0 1em 1em;
+	}
+	li {
+		list-style:disc;
+		margin-top: .2em;
+	}
+	strong {
+		font-weight: bold;
+	}
+}
