@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 
 body {
-	font:110%/1.5 pt-sans, sans-serif;
+	font:110%/1.5 $body-font;
 	background: $background-color;
 	color: $text-color;
 }
@@ -26,7 +26,6 @@ h3 {
 a {
 	text-decoration: none;
 	color: $base-color;
-	//border-bottom: 1px dotted lighten($base, 10%);
 }
 a:hover {
 	color: $base-dark-color;
@@ -41,7 +40,7 @@ article {
 article header {
 	line-height:1em;
 	h1 {
-		font-family: neuton;
+		font-family: $headline-font;
 		text-shadow:1px 1px 1px $dark-gray-color;
 		font-size:150%;
 		line-height:1em;

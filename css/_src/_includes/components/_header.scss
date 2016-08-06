@@ -27,7 +27,7 @@ header[role="banner"] {
 		}
 		a {
 			color: $base-muted-color;
-			font-family: fredericka-the-great, serif;
+			font-family: $header-font;
 			border: none;
 		}
 	}
@@ -36,7 +36,7 @@ header[role="banner"] {
 		padding-bottom: .2em;
 	}
 	li {
-		font-family: neuton;
+		font-family: $headline-font;
 		a {
 			padding: 0 .8em;
 		}
