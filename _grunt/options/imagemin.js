@@ -2,9 +2,9 @@ module.exports = {
 	default: {
 		files: [{
 			expand: true,
-			cwd: 'assets/img/_source/',
+			cwd: 'images/_src/',
 			src: ['**/*.{png,jpg,jpeg,gif,svg}'],
-			dest: 'assets/img'
+			dest: 'images'
 		}]
 	},
 	svg: {
