@@ -19,7 +19,7 @@ I slowed it down and changed the drum sounds, but didn't change the drum pattern
 Then I used the exact same uke sound to play along with the slower groove:
 {% include audio.html audio=page.audio3 %}
 
-{% include img src="ubb09.png" alt="KORG Gadget screenshot" %}
+{% include img src="ubb09.jpeg" alt="KORG Gadget screenshot" %}
 
 Made with:
 

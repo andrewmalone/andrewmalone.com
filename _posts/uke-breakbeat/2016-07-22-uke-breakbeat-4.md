@@ -8,7 +8,7 @@ Going for a more mellow, fingerpicked uke part on this one.
 
 {% include audio.html %}
 
-{% include img src="ubb04.png" alt="KORG Gadget screenshot" %}
+{% include img src="ubb04.jpeg" alt="KORG Gadget screenshot" %}
 
 Made with:
 

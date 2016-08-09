@@ -10,7 +10,7 @@ tags: 113bpm
 
 The beat was created on the subway during a commute home from work.
 
-{% include img src="ubb01.png" alt="Uke breakbeat 1 KORG gadget screenshot" %}
+{% include img src="ubb01.jpeg" alt="Uke breakbeat 1 KORG gadget screenshot" %}
 
 Made with:
 
