@@ -8,7 +8,7 @@ Another four bar drum pattern, trying to push into faster tempos (this one is at
 
 {% include audio.html %}
 
-{% include img src="ubb06.png" alt="KORG Gadget screenshot" %}
+{% include img src="ubb06.jpeg" alt="KORG Gadget screenshot" %}
 
 Made with:
 

@@ -8,7 +8,7 @@ Another faster tempo at 155bpm. This one has a little intro before the main groo
 
 {% include audio.html %}
 
-{% include img src="ubb08.png" alt="KORG Gadget screenshot" %}
+{% include img src="ubb08.jpeg" alt="KORG Gadget screenshot" %}
 
 Made with:
 

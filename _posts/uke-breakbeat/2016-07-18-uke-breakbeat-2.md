@@ -6,7 +6,7 @@ tags: 103bpm
 ---
 {% include audio.html %}
 
-{% include img src="ubb02.png" alt="KORG Gadget screenshot" %}
+{% include img src="ubb02.jpeg" alt="KORG Gadget screenshot" %}
 
 Made with:
 
