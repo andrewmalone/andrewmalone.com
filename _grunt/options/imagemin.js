@@ -10,7 +10,7 @@ module.exports = {
 	svg: {
 		files: [{
 			expand: true,
-			cwd: '_includes/svg',
+			cwd: '_includes/svg/_src',
 			src: ['*.svg'],
 			dest: '_includes/svg/o'
 		}]
