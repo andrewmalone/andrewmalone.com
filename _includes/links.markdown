@@ -29,3 +29,5 @@
 [AUM]: https://itunes.apple.com/us/app/aum-audio-mixer/id1055636344
 [Audioshare]: https://itunes.apple.com/us/app/audioshare-audio-document/id543859300
 [KORG Gadget]: https://itunes.apple.com/us/app/korg-gadget/id791077159
+[gear/bari]: /gear/pono-mbd
+[gear/ubass]: /gear/kala-ubass

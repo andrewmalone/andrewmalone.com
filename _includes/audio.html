@@ -1,3 +1,10 @@
+{% if include.page != nil %}
+	{% assign date = include.page.date %}
+	{% assign draft = include.page.draft %}
+{% else %}
+	{% assign date = page.date %}
+	{% assign draft = page.draft %}
+{% endif %}
 {% if include.audio == nil %}
 	{% assign audio = page.audio %}
 {% else %}
@@ -7,11 +14,10 @@
 <h3 class="audiotitle">{{ audio.title }}</h3>
 {% endif %}
 
-{% assign location = page.path | split:"/" %}
-{% if location[0] == "_posts" %}
-	{% capture path %}/audio/{{ page.date | date: "%Y-%m-%d" }}/{{ audio.file }}.mp3{% endcapture %}
-{% elsif location[0] == "_drafts" %}
+{% if draft %}
 	{% capture path %}/audio/drafts/{{ audio.file }}.wav{% endcapture %}
+{% else %}
+	{% capture path %}/audio/{{ date | date: "%Y-%m-%d" }}/{{ audio.file }}.mp3{% endcapture %}
 {% endif %}
 
 <audio controls preload="none" {% if audio.loop == true %}loop{% endif %}>
