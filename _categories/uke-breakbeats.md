@@ -1,6 +1,6 @@
 ---
 title: Ukulele breakbeats
-layout: page
+layout: post
 permalink: uke-breakbeat/index.html
 ---
 I love breakbeats - and I'm constantly studying them and trying to program them. Creating drum patterns is an easy way to kill some time commuting on the train to and from work. 
