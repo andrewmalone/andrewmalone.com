@@ -32,3 +32,5 @@
 [gear/bari]: /gear/pono-mbd
 [gear/ubass]: /gear/kala-ubass
 [Fieldscaper]: https://itunes.apple.com/us/app/fieldscaper-sound-warp-field/id1006624104
+[Patterning]: https://itunes.apple.com/us/app/patterning-drum-machine/id976690555
+[Amplitube Acoustic]: https://itunes.apple.com/us/app/amplitube-acoustic/id1038441797
