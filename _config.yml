@@ -18,7 +18,8 @@ exclude: [
     'audio/*.wav',
     'audio/*.aiff',
     'audio/*.mp4',
-    '*.py'
+    '*.py',
+    '_drafts/screenshots'
 ]
 include: [
 	'_categories'
