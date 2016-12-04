@@ -35,3 +35,5 @@
 [Patterning]: https://itunes.apple.com/us/app/patterning-drum-machine/id976690555
 [Amplitube Acoustic]: https://itunes.apple.com/us/app/amplitube-acoustic/id1038441797
 [Sector]: https://itunes.apple.com/us/app/sector/id618095247
+[Dedalus]: https://itunes.apple.com/us/app/dedalus-delay-audio-mangler/id953953694
+[Korvpressor]: https://itunes.apple.com/us/app/korvpressor-smart-dynamic/id995163144
