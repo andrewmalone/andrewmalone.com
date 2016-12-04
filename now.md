@@ -19,5 +19,5 @@ Last updated November 14, 2016
 [huit]: http://huit.harvard.edu/administrative-technology-services
 [kate]: http://kateleary.net
 [uro]: http://www.ultrasonicrockorchestra.com
-[regent]: http://regenttheatre.com/details/rock_and_roll_extravaganza7
+[regent]: http://regenttheatre.com/index.php/main/details/rock_and_roll_extravaganza7
 [now]: http://nownownow.com/about
