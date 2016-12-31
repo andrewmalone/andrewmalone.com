@@ -21,6 +21,7 @@ category = ""
 audio_files = []
 with open(draft_file) as f:
     front_matter = False
+    main_audio = False
     for line in f:
         # print line
         if line == "---\n":
@@ -29,9 +30,13 @@ with open(draft_file) as f:
                 continue
             else:
                 break
+        if "audio:" in line or "audio_main:" in line:
+        	main_audio = True
         if "file:" in line:
             audio_file = line.split(":")[1]
             audio_files.append(audio_file.strip())
+            if main_audio is True:
+            	main_audio = audio_file.strip()
         if "category" in line:
         	category = line.split(":")[1].strip() + "/"
 
@@ -57,7 +62,7 @@ for audio_file in audio_files:
     subprocess.call(["lame", "-V6", new_file])
 
     # convert to video
-    if video is True:
+    if video is True and audio_file == main_audio:
         command = [
             'ffmpeg',
             '-i',
