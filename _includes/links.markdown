@@ -37,3 +37,4 @@
 [Sector]: https://itunes.apple.com/us/app/sector/id618095247
 [Dedalus]: https://itunes.apple.com/us/app/dedalus-delay-audio-mangler/id953953694
 [Korvpressor]: https://itunes.apple.com/us/app/korvpressor-smart-dynamic/id995163144
+[Effectrix]: https://itunes.apple.com/us/app/effectrix/id681772221
