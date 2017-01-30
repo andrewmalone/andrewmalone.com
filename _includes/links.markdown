@@ -38,3 +38,5 @@
 [Dedalus]: https://itunes.apple.com/us/app/dedalus-delay-audio-mangler/id953953694
 [Korvpressor]: https://itunes.apple.com/us/app/korvpressor-smart-dynamic/id995163144
 [Effectrix]: https://itunes.apple.com/us/app/effectrix/id681772221
+[Frekvens]: https://itunes.apple.com/us/app/frekvens/id1062305416
+[AudioEffX]: https://itunes.apple.com/us/app/audioeffx/id1173816162
