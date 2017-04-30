@@ -31,6 +31,7 @@
 [KORG Gadget]: https://itunes.apple.com/us/app/korg-gadget/id791077159
 [gear/bari]: /gear/pono-mbd
 [gear/ubass]: /gear/kala-ubass
+[gear/tenor]: /gear/kala-kajte
 [Fieldscaper]: https://itunes.apple.com/us/app/fieldscaper-sound-warp-field/id1006624104
 [Patterning]: https://itunes.apple.com/us/app/patterning-drum-machine/id976690555
 [Amplitube Acoustic]: https://itunes.apple.com/us/app/amplitube-acoustic/id1038441797
@@ -40,3 +41,4 @@
 [Effectrix]: https://itunes.apple.com/us/app/effectrix/id681772221
 [Frekvens]: https://itunes.apple.com/us/app/frekvens/id1062305416
 [AudioEffX]: https://itunes.apple.com/us/app/audioeffx/id1173816162
+[Magellan]: https://itunes.apple.com/us/app/magellan/id544119998
