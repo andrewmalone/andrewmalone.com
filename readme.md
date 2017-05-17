@@ -1,3 +1,11 @@
+# Dependencies
+
+* node
+* grunt-cli
+* sass
+* jekyll
+* jekyll-redirect-from
+
 ## Grunt tasks
 
 ### default
