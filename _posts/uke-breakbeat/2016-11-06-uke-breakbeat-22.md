@@ -11,7 +11,7 @@ sector:
 ---
 {% include audio.html audio=page.audio_main %}
 
-Another one using a different app for the beat, this time it's [Sector], which is a probability based loop slicer. I used a beat from the [very first post]({% post_url 2016-07-17-uke-breakbeat-1 %}) in this series:
+Another one using a different app for the beat, this time it's [Sector], which is a probability based loop slicer. I used a beat from the [very first post]({% post_url uke-breakbeat/2016-07-17-uke-breakbeat-1 %}) in this series:
 
 {% include audio.html audio=page.bb1 %}
 

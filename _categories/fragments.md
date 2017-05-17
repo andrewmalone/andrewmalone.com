@@ -10,7 +10,7 @@ I've built up quite a few of these over the past six years. I don't know if any 
 So far, there are {{site.categories.fragments.size}} fragment posts:
 {% assign posts = site.categories.fragments | sort: 'date' %}
 {% for post in posts %}
-{% if post.summary != true -%}* [{{post.title}}]({{post.url}}){% endif %}{% endfor %}
+{% if post.summary != true %}* [{{post.title}}]({{post.url}}){% endif %}{% endfor %}
 
 
 ## Recording notes

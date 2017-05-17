@@ -10,7 +10,7 @@ audio_main:
   file: ubb09
 tags: 92bpm
 ---
-For this one, I took the exact same beat from the [last pattern]({% post_url 2016-07-31-uke-breakbeat-8 %}):
+For this one, I took the exact same beat from the [last pattern]({% post_url uke-breakbeat/2016-07-31-uke-breakbeat-8 %}):
 {% include audio.html audio=page.audio1 %}
 
 I slowed it down and changed the drum sounds, but didn't change the drum pattern at all:
