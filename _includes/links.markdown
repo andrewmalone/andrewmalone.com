@@ -42,3 +42,4 @@
 [Frekvens]: https://itunes.apple.com/us/app/frekvens/id1062305416
 [AudioEffX]: https://itunes.apple.com/us/app/audioeffx/id1173816162
 [Magellan]: https://itunes.apple.com/us/app/magellan/id544119998
+[iGrandPiano]: https://itunes.apple.com/us/app/igrand-piano-for-ipad/id562917936
