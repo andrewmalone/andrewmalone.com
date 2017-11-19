@@ -9,13 +9,9 @@ I'm married to [Kate Leary][kate] - together we are raising two funny little boy
 
 When I have time to myself at home, I'm usually either playing one of my ukuleles or exploring the world of iOS music on the iPad.
 
-I'm playing in one upcoming show with the [Ultrasonic Rock Orchestra][uro]:
-
-* November 11: [Bowie Lives!](http://www.regenttheatre.com/details/ultrasonic_rock_orchestra_bowie_lives)
-
 ---
 Inspired by [Derek Sivers](https://sivers.org/nowff) and [nownownow.com][now]  
-Last updated Oct 1, 2017
+Last updated Nov 19, 2017
 {: .text-small }
 
 [huit]: http://huit.harvard.edu/administrative-technology-services
