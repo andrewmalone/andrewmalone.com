@@ -43,3 +43,4 @@
 [AudioEffX]: https://itunes.apple.com/us/app/audioeffx/id1173816162
 [Magellan]: https://itunes.apple.com/us/app/magellan/id544119998
 [iGrandPiano]: https://itunes.apple.com/us/app/igrand-piano-for-ipad/id562917936
+[Troublemaker]: https://itunes.apple.com/us/app/troublemaker/id1180892130
